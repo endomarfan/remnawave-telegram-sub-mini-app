@@ -116,7 +116,7 @@ export const SubscriptionInfoWidget = ({
                 </Group>
                 <SimpleGrid cols={{ base: 2, xs: 2, sm: 2 }} spacing="xs" verticalSpacing="xs">
                     <InfoBlock
-                        color="brandOrange"
+                        color="blue"
                         icon={<IconUser size={16} />}
                         title={t('subscription-info.widget.name')}
                         value={user.user.username}

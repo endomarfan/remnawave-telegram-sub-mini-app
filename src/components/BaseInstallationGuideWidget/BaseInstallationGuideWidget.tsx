@@ -44,7 +44,7 @@ const StepCard = ({ icon, title, description, children, color = 'brandOrange' }:
                     variant="light"
                     style={{
                         background: `linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)`,
-                        border: `1px solid var(--mantine-color-brandOrange-2)`,
+                        border: `1px solid var(--mantine-color-brandOrange-3)`,
                         flexShrink: 0
                     }}
                 >
@@ -134,7 +134,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                         const isActive = app.id === activeTabId
                         return (
                             <Button
-                                color={isActive ? 'brandOrange' : 'gray'}
+                                color={isActive ? 'blue' : 'gray'}
                                 key={app.id}
                                 leftSection={
                                     app.isFeatured ? <IconStar color="gold" size={16} /> : undefined
@@ -149,10 +149,10 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         minWidth: 0,
                                         flex: '1 0 auto',
                                         background: isActive
-                                            ? 'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)'
+                                            ? 'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(28, 126, 214, 0.05) 100%)'
                                             : 'rgba(255, 255, 255, 0.02)',
                                         border: isActive
-                                            ? `1px solid var(--mantine-color-brandOrange-2)`
+                                            ? '1px solid rgba(34, 139, 230, 0.2)'
                                             : '1px solid rgba(255, 255, 255, 0.08)',
                                         transition: 'all 0.2s ease'
                                     }

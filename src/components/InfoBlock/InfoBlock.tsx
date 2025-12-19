@@ -5,8 +5,8 @@ import {IInfoBlockProps} from "@/types/infoBlock";
 const colorGradients: Record<string, { background: string; border: string }> = {
     blue: {
         background:
-            'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
-        border: 'var(--mantine-color-brandOrange-2)'
+            'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(28, 126, 214, 0.05) 100%)',
+        border: 'rgba(34, 139, 230, 0.2)'
     },
     cyan: {
         background:
@@ -53,7 +53,7 @@ const colorGradients: Record<string, { background: string; border: string }> = {
 export const InfoBlock = (props: IInfoBlockProps) => {
     const { color, icon, title, value } = props
 
-    const gradient = colorGradients[color] || colorGradients.brandOrange
+    const gradient = colorGradients[color] || colorGradients.blue
 
     return (
         <Box

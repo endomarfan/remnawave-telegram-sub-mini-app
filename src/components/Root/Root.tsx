@@ -35,12 +35,12 @@ function RootInner({ children }: PropsWithChildren) {
     if (
         miniApp.setHeaderColor.isAvailable()
     ) {
-        miniApp.setHeaderColor('#161b22');
+        miniApp.setHeaderColor('#0f1419');
         miniApp.headerColor();
     }
 
     if (miniApp.setBackgroundColor.isAvailable()) {
-        miniApp.setBackgroundColor('#161b22');
+        miniApp.setBackgroundColor('#0f1419');
         miniApp.backgroundColor();
     }
 
