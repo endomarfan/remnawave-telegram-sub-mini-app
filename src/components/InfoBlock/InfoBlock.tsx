@@ -11,7 +11,7 @@ const colorGradients: Record<string, { background: string; border: string }> = {
     cyan: {
         background:
             'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
-        border: 'var(--mantine-color-brandOrange-2)'
+        border: 'var(--mantine-color-brandOrange-3)'
     },
     green: {
         background:
@@ -36,12 +36,12 @@ const colorGradients: Record<string, { background: string; border: string }> = {
     orange: {
         background:
             'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
-        border: 'var(--mantine-color-brandOrange-2)'
+        border: 'var(--mantine-color-brandOrange-3)'
     },
     brandOrange: {
         background:
             'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
-        border: 'var(--mantine-color-brandOrange-2)'
+        border: 'var(--mantine-color-brandOrange-3)'
     },
     violet: {
         background:
