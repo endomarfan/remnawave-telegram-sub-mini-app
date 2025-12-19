@@ -56,7 +56,7 @@ export const SubscriptionLinkWidget = ({subscription, supportUrl }: {subscriptio
             <ActionIcon
                 c={color}
                 component="a"
-                radius="md"
+                radius="xl"
                 href={supportUrl}
                 rel="noopener noreferrer"
                 size="xl"
@@ -95,7 +95,7 @@ export const SubscriptionLinkWidget = ({subscription, supportUrl }: {subscriptio
                             fullWidth
                             onClick={handleCopy}
                             variant="light"
-                            radius="md"
+                            radius="xl"
                             leftSection={<IconCopy />}
                         >
                             {t('subscription-link.widget.copy-link')}
@@ -125,7 +125,7 @@ export const SubscriptionLinkWidget = ({subscription, supportUrl }: {subscriptio
                         setOpen(true)
                     }}
                     size="xl"
-                    radius="md"
+                    radius="xl"
                     variant="default"
                     style={{
                         background: 'rgba(255, 255, 255, 0.02)',

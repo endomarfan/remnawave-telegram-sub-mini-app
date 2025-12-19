@@ -35,7 +35,7 @@ const StepCard = ({ icon, title, description, children, color = 'cyan' }: StepCa
     const isMobile = useMediaQuery('(max-width: 30em)')
 
     return (
-        <Card p={{ base: 'sm', xs: 'md', sm: 'lg' }} radius="lg" className="step-card">
+        <Card p={{ base: 'sm', xs: 'md', sm: 'lg' }} className="step-card">
             <Group gap={isMobile ? 'sm' : 'md'} wrap="nowrap" align="flex-start">
                 <ThemeIcon
                     color={color}
@@ -140,7 +140,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                     app.isFeatured ? <IconStar color="gold" size={16} /> : undefined
                                 }
                                 onClick={() => handleTabChange(app.id)}
-                                radius="md"
+                                radius="xl"
                                 styles={{
                                     root: {
                                         padding: '10px 16px',
@@ -200,7 +200,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         key={index}
                                         target="_blank"
                                         variant="light"
-                                        radius="md"
+                                        radius="xl"
                                         size="sm"
                                     >
                                         {getButtonText(button)}
@@ -261,7 +261,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         key={index}
                                         target="_blank"
                                         variant="light"
-                                        radius="md"
+                                        radius="xl"
                                         size="sm"
                                     >
                                         {getButtonText(button)}

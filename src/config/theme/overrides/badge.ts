@@ -3,7 +3,7 @@ import { Badge } from '@mantine/core'
 export default {
     Badge: Badge.extend({
         defaultProps: {
-            radius: 'md',
+            radius: 'xl',
             variant: 'outline'
         }
     })

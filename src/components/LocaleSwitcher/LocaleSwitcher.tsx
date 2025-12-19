@@ -45,7 +45,7 @@ export const LocaleSwitcher: FC = () => {
                   <ActionIcon
                       color="gray"
                       size="xl"
-                      radius="md"
+                      radius="xl"
                       variant="default"
                       style={{
                           background: 'rgba(255, 255, 255, 0.02)',

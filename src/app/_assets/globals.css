@@ -114,7 +114,7 @@ body {
 }
 
 .logo-text-highlight {
-  color: var(--mantine-color-cyan-4);
+  color: var(--mantine-color-brandOrange-6);
 }
 
 .logo-text-normal {
@@ -157,7 +157,7 @@ body {
 }
 
 .info-card-orange {
-  background: linear-gradient(135deg, rgba(253, 126, 20, 0.1) 0%, rgba(247, 103, 7, 0.05) 100%);
-  border: 1px solid rgba(253, 126, 20, 0.2);
+  background: linear-gradient(135deg, var(--mantine-color-brandOrange-6) 0%, var(--mantine-color-brandOrange-7) 100%);
+  border: 1px solid var(--mantine-color-brandOrange-6);
 }
 

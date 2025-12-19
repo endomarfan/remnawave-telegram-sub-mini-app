@@ -197,7 +197,7 @@ export const InstallationGuideWidget = ({
                                 leftSection={<IconExternalLink size={14} />}
                                 target="_blank"
                                 variant="light"
-                                radius="md"
+                                radius="xl"
                                 size="sm"
                             >
                                 {buttonText}
@@ -228,7 +228,7 @@ export const InstallationGuideWidget = ({
     }
 
     return (
-        <Card p={{ base: 'sm', xs: 'md', sm: 'lg', md: 'xl' }} radius="lg" className="glass-card">
+        <Card p={{ base: 'sm', xs: 'md', sm: 'lg', md: 'xl' }} className="glass-card">
             <Stack gap="md">
                 <Group justify="space-between" gap="sm">
                     <Title order={4} c="white" fw={600}>

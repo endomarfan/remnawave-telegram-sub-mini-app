@@ -70,7 +70,7 @@ export const SubscriptionInfoWidget = ({
 
 
     return (
-        <Card p={{ base: 'sm', xs: 'md', sm: 'lg', md: 'xl' }} radius="lg" className="glass-card">
+        <Card p={{ base: 'sm', xs: 'md', sm: 'lg', md: 'xl' }} className="glass-card">
             <Stack gap={isMobile ? 'sm' : 'md'}>
                 <Group justify="space-between" gap="sm">
                     <Group
