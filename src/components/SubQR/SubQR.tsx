@@ -18,7 +18,7 @@ export const SubscriptionLinkWidget = ({subscription, supportUrl }: {subscriptio
     const clipboard = useClipboard({ timeout: 10000 })
     const subscriptionQrCode = renderSVG(subscription, {
         whiteColor: '#2f2f2f',
-        blackColor: '#fd7e14'
+        blackColor: '#f76707'
     })
 
 

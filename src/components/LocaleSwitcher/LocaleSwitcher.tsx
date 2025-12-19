@@ -1,7 +1,6 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
 import {FC, useState} from 'react';
 
 import {ActionIcon, Flex, Menu, Text} from "@mantine/core";
@@ -14,14 +13,13 @@ import {IconLanguage} from "@tabler/icons-react";
 
 export const LocaleSwitcher: FC = () => {
   const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
 
   const [opened, setOpened] = useState(false)
 
   const changeLanguage = (value: string) => {
-    const newLocale = value as Locale;
-    router.push(pathname, { locale: newLocale });
+    const locale = value as Locale;
+    setLocale(locale);
+
   }
 
   const items = localesMap.map((item) => (
