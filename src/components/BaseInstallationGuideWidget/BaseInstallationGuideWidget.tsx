@@ -42,11 +42,6 @@ const StepCard = ({ icon, title, description, children, color = 'brandOrange' }:
                     size={isMobile ? 36 : 44}
                     radius="xl"
                     variant="light"
-                    style={{
-                        background: `linear-gradient(135deg, var(--mantine-color-brandOrange-3) 0%, var(--mantine-color-brandOrange-2) 100%)`,
-                        border: `1px solid var(--mantine-color-brandOrange-4)`,
-                        flexShrink: 0
-                    }}
                 >
                     {icon}
                 </ThemeIcon>
@@ -137,7 +132,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                 color={isActive ? 'brandOrange' : 'gray'}
                                 key={app.id}
                                 leftSection={
-                                    app.isFeatured ? <IconStar color="gold" size={16} /> : undefined
+                                    app.isFeatured ? <IconStar color="white" size={16} /> : undefined
                                 }
                                 onClick={() => handleTabChange(app.id)}
                                 radius="lg"
@@ -148,12 +143,6 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         lineHeight: '1.5',
                                         minWidth: 0,
                                         flex: '1 0 auto',
-                                        background: isActive
-                                            ? 'linear-gradient(135deg, var(--mantine-color-brandOrange-3) 0%, var(--mantine-color-brandOrange-2) 100%)'
-                                            : 'rgba(255, 255, 255, 0.02)',
-                                        border: isActive
-                                            ? '1px solid var(--mantine-color-brandOrange-4)'
-                                            : '1px solid rgba(255, 255, 255, 0.08)',
                                         transition: 'all 0.2s ease'
                                     }
                                 }}
