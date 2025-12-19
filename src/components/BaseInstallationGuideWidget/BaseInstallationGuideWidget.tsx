@@ -43,7 +43,7 @@ const StepCard = ({ icon, title, description, children, color = 'brandOrange' }:
                     radius="xl"
                     variant="light"
                     style={{
-                        background: `linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)`,
+                        background: `linear-gradient(135deg, var(--mantine-color-brandOrange-3) 0%, var(--mantine-color-brandOrange-2) 100%)`,
                         border: `1px solid var(--mantine-color-brandOrange-4)`,
                         flexShrink: 0
                     }}
@@ -149,7 +149,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         minWidth: 0,
                                         flex: '1 0 auto',
                                         background: isActive
-                                            ? 'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)'
+                                            ? 'linear-gradient(135deg, var(--mantine-color-brandOrange-3) 0%, var(--mantine-color-brandOrange-2) 100%)'
                                             : 'rgba(255, 255, 255, 0.02)',
                                         border: isActive
                                             ? '1px solid var(--mantine-color-brandOrange-4)'
