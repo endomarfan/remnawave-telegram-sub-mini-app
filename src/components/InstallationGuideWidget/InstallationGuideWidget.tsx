@@ -197,7 +197,7 @@ export const InstallationGuideWidget = ({
                                 leftSection={<IconExternalLink size={14} />}
                                 target="_blank"
                                 variant="light"
-                                radius="xl"
+                                radius="lg"
                                 size="sm"
                             >
                                 {buttonText}

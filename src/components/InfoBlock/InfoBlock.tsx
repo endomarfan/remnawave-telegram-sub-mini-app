@@ -5,13 +5,13 @@ import {IInfoBlockProps} from "@/types/infoBlock";
 const colorGradients: Record<string, { background: string; border: string }> = {
     blue: {
         background:
-            'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(28, 126, 214, 0.05) 100%)',
-        border: 'rgba(34, 139, 230, 0.2)'
+            'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
+        border: 'var(--mantine-color-brandOrange-2)'
     },
     cyan: {
         background:
-            'linear-gradient(135deg, rgba(34, 211, 238, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%)',
-        border: 'rgba(34, 211, 238, 0.2)'
+            'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
+        border: 'var(--mantine-color-brandOrange-2)'
     },
     green: {
         background:
@@ -35,8 +35,13 @@ const colorGradients: Record<string, { background: string; border: string }> = {
     },
     orange: {
         background:
-            'linear-gradient(135deg, rgba(253, 126, 20, 0.1) 0%, rgba(247, 103, 7, 0.05) 100%)',
-        border: 'rgba(253, 126, 20, 0.2)'
+            'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
+        border: 'var(--mantine-color-brandOrange-2)'
+    },
+    brandOrange: {
+        background:
+            'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
+        border: 'var(--mantine-color-brandOrange-2)'
     },
     violet: {
         background:
@@ -48,7 +53,7 @@ const colorGradients: Record<string, { background: string; border: string }> = {
 export const InfoBlock = (props: IInfoBlockProps) => {
     const { color, icon, title, value } = props
 
-    const gradient = colorGradients[color] || colorGradients.cyan
+    const gradient = colorGradients[color] || colorGradients.brandOrange
 
     return (
         <Box

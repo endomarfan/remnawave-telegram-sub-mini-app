@@ -15,7 +15,7 @@ export function Loading({
                 {text && <Text size="lg">{text}</Text>}
                 <Progress
                     animated
-                    color="cyan"
+                    color="brandOrange"
                     maw="32rem"
                     radius="xs"
                     striped

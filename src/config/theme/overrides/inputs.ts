@@ -4,27 +4,27 @@ import { DateTimePicker } from '@mantine/dates'
 export default {
     InputBase: InputBase.extend({
         defaultProps: {
-            radius: 'xl'
+            radius: 'lg'
         }
     }),
     PasswordInput: PasswordInput.extend({
         defaultProps: {
-            radius: 'xl'
+            radius: 'lg'
         }
     }),
     TextInput: TextInput.extend({
         defaultProps: {
-            radius: 'xl'
+            radius: 'lg'
         }
     }),
     Select: Select.extend({
         defaultProps: {
-            radius: 'xl'
+            radius: 'lg'
         }
     }),
     DateTimePicker: DateTimePicker.extend({
         defaultProps: {
-            radius: 'xl'
+            radius: 'lg'
         }
     })
 }

@@ -32,7 +32,7 @@ export const SubscriptionLinkWidget = ({subscription, supportUrl }: {subscriptio
         notifications.show({
             title: t('subscription-link.widget.link-copied'),
             message: t('subscription-link.widget.link-copied-to-clipboard'),
-            color: 'cyan'
+            color: 'brandOrange'
         })
         clipboard.copy(subscription)
     }
@@ -56,7 +56,7 @@ export const SubscriptionLinkWidget = ({subscription, supportUrl }: {subscriptio
             <ActionIcon
                 c={color}
                 component="a"
-                radius="xl"
+                radius="lg"
                 href={supportUrl}
                 rel="noopener noreferrer"
                 size="xl"
@@ -95,7 +95,7 @@ export const SubscriptionLinkWidget = ({subscription, supportUrl }: {subscriptio
                             fullWidth
                             onClick={handleCopy}
                             variant="light"
-                            radius="xl"
+                            radius="lg"
                             leftSection={<IconCopy />}
                         >
                             {t('subscription-link.widget.copy-link')}
@@ -125,7 +125,7 @@ export const SubscriptionLinkWidget = ({subscription, supportUrl }: {subscriptio
                         setOpen(true)
                     }}
                     size="xl"
-                    radius="xl"
+                    radius="lg"
                     variant="default"
                     style={{
                         background: 'rgba(255, 255, 255, 0.02)',

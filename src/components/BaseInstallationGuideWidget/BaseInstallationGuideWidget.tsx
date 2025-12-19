@@ -31,7 +31,7 @@ interface StepCardProps {
     color?: string
 }
 
-const StepCard = ({ icon, title, description, children, color = 'cyan' }: StepCardProps) => {
+const StepCard = ({ icon, title, description, children, color = 'brandOrange' }: StepCardProps) => {
     const isMobile = useMediaQuery('(max-width: 30em)')
 
     return (
@@ -43,8 +43,8 @@ const StepCard = ({ icon, title, description, children, color = 'cyan' }: StepCa
                     radius="xl"
                     variant="light"
                     style={{
-                        background: `linear-gradient(135deg, rgba(34, 211, 238, 0.15) 0%, rgba(6, 182, 212, 0.1) 100%)`,
-                        border: '1px solid rgba(34, 211, 238, 0.3)',
+                        background: `linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)`,
+                        border: `1px solid var(--mantine-color-brandOrange-2)`,
                         flexShrink: 0
                     }}
                 >
@@ -134,13 +134,13 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                         const isActive = app.id === activeTabId
                         return (
                             <Button
-                                color={isActive ? 'cyan' : 'gray'}
+                                color={isActive ? 'brandOrange' : 'gray'}
                                 key={app.id}
                                 leftSection={
                                     app.isFeatured ? <IconStar color="gold" size={16} /> : undefined
                                 }
                                 onClick={() => handleTabChange(app.id)}
-                                radius="xl"
+                                radius="lg"
                                 styles={{
                                     root: {
                                         padding: '10px 16px',
@@ -149,10 +149,10 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         minWidth: 0,
                                         flex: '1 0 auto',
                                         background: isActive
-                                            ? 'linear-gradient(135deg, rgba(34, 211, 238, 0.15) 0%, rgba(6, 182, 212, 0.1) 100%)'
+                                            ? 'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)'
                                             : 'rgba(255, 255, 255, 0.02)',
                                         border: isActive
-                                            ? '1px solid rgba(34, 211, 238, 0.4)'
+                                            ? `1px solid var(--mantine-color-brandOrange-2)`
                                             : '1px solid rgba(255, 255, 255, 0.08)',
                                         transition: 'all 0.2s ease'
                                     }
@@ -200,7 +200,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         key={index}
                                         target="_blank"
                                         variant="light"
-                                        radius="xl"
+                                        radius="lg"
                                         size="sm"
                                     >
                                         {getButtonText(button)}
@@ -261,7 +261,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         key={index}
                                         target="_blank"
                                         variant="light"
-                                        radius="xl"
+                                        radius="lg"
                                         size="sm"
                                     >
                                         {getButtonText(button)}

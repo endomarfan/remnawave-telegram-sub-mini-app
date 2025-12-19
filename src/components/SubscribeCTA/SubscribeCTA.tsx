@@ -14,7 +14,7 @@ export function SubscribeCta({buyLink}: {buyLink: string | undefined}) {
                 <Lottie animationData={noSubAnimate} loop={true} />
             </Box>
             {buyLink ? (
-                <Button component={Link} href={buyLink} target="_blank" color="cyan">
+                <Button component={Link} href={buyLink} target="_blank" color="brandOrange">
                     {t('main.page.component.buy')}
                 </Button>
             ) : (
