@@ -143,6 +143,7 @@ export const BaseInstallationGuideWidget = (props: IBaseGuideProps) => {
                                         lineHeight: '1.5',
                                         minWidth: 0,
                                         flex: '1 0 auto',
+                                        fontSize: '0.9rem',
                                         transition: 'all 0.2s ease'
                                     }
                                 }}
