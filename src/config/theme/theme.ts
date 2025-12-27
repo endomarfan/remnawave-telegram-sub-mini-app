@@ -70,13 +70,11 @@ export const theme = createTheme({
             '#471700'
         ]
     },
-    primaryShade: 8,
-    primaryColor: 'cyan',
-    autoContrast: true,
-    luminanceThreshold: 0.3,
-    headings: {
-        fontFamily: 'Unbounded, Vazirmatn, Apple Color Emoji, Noto Sans SC, sans-serif',
-        fontWeight: '600'
+    primaryColor: 'brandOrange',
+
+    primaryShade: {
+        light: 6,
+        dark: 7
     },
 
     defaultRadius: 'lg'

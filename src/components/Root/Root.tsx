@@ -87,12 +87,12 @@ function RootInner({ children }: PropsWithChildren) {
         miniApp.mount()
     }
 if (miniApp.setHeaderColor.isAvailable()) {
-        miniApp.setHeaderColor('#161b22')
+        miniApp.setHeaderColor('#121212')
         miniApp.headerColor()
     }
 
     if (miniApp.setBackgroundColor.isAvailable()) {
-        miniApp.setBackgroundColor('#161b22')
+        miniApp.setBackgroundColor('#121212')
         miniApp.backgroundColor()
     }
 

@@ -21,8 +21,8 @@ export const SubscriptionLinkWidget = ({ supportUrl }: { supportUrl: string }) =
 
     const clipboard = useClipboard({ timeout: 10000 })
 const subscriptionQrCode = renderSVG(subscription.subscriptionUrl, {
-        whiteColor: '#161B22',
-        blackColor: '#22d3ee'
+        whiteColor: '#2f2f2f',
+        blackColor: '#f76707'
     })
 
     const [open, setOpen] = useState(false)
@@ -33,7 +33,7 @@ const subscriptionQrCode = renderSVG(subscription.subscriptionUrl, {
         notifications.show({
             title: t(baseTranslations.linkCopied),
             message: t(baseTranslations.linkCopiedToClipboard),
-            color: 'cyan'
+            color: 'brandOrange'
         })
         clipboard.copy(subscription.subscriptionUrl)
     }
