@@ -6,47 +6,47 @@ const colorGradients: Record<string, { background: string; border: string }> = {
     blue: {
         background:
             'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(28, 126, 214, 0.05) 100%)',
-        border: 'rgba(34, 139, 230, 0.2)'
+        border: 'rgba(34, 139, 230, 0.25)'
     },
     cyan: {
         background:
             'linear-gradient(135deg, rgba(var(--brand-orange-rgb), 0.1) 0%, rgba(var(--brand-orange-rgb), 0.05) 100%)',
-        border: 'rgba(var(--brand-orange-rgb), 0.2)'
+        border: 'rgba(var(--brand-orange-rgb), 0.25)'
     },
     green: {
         background:
             'linear-gradient(135deg, rgba(64, 192, 87, 0.1) 0%, rgba(55, 178, 77, 0.05) 100%)',
-        border: 'rgba(64, 192, 87, 0.2)'
+        border: 'rgba(64, 192, 87, 0.25)'
     },
     teal: {
         background:
             'linear-gradient(135deg, rgba(32, 201, 151, 0.1) 0%, rgba(18, 184, 134, 0.05) 100%)',
-        border: 'rgba(32, 201, 151, 0.2)'
+        border: 'rgba(32, 201, 151, 0.25)'
     },
     red: {
         background:
             'linear-gradient(135deg, rgba(var(--brand-orange-rgb), 0.1) 0%, rgba(var(--brand-orange-rgb), 0.05) 100%)',
-        border: 'rgba(var(--brand-orange-rgb), 0.2)'
+        border: 'rgba(var(--brand-orange-rgb), 0.25)'
     },
     yellow: {
         background:
             'linear-gradient(135deg, rgba(250, 176, 5, 0.1) 0%, rgba(245, 159, 0, 0.05) 100%)',
-        border: 'rgba(250, 176, 5, 0.2)'
+        border: 'rgba(250, 176, 5, 0.25)'
     },
     orange: {
         background:
             'linear-gradient(135deg, rgba(var(--brand-orange-rgb), 0.1) 0%, rgba(var(--brand-orange-rgb), 0.05) 100%)',
-        border: 'rgba(var(--brand-orange-rgb), 0.2)'
+        border: 'rgba(var(--brand-orange-rgb), 0.25)'
     },
     brandOrange: {
         background:
             'linear-gradient(135deg, rgba(var(--brand-orange-rgb), 0.1) 0%, rgba(var(--brand-orange-rgb), 0.05) 100%)',
-        border: 'rgba(var(--brand-orange-rgb), 0.2)'
+        border: 'rgba(var(--brand-orange-rgb), 0.25)'
     },
     violet: {
         background:
             'linear-gradient(135deg, rgba(151, 117, 250, 0.1) 0%, rgba(132, 94, 247, 0.05) 100%)',
-        border: 'rgba(151, 117, 250, 0.2)'
+        border: 'rgba(151, 117, 250, 0.25)'
     }
 }
 

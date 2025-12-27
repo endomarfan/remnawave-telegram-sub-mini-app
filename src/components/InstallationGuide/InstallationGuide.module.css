@@ -34,7 +34,7 @@
 .appButtonActive,
 .appButtonActive:hover {
     background: linear-gradient(90deg, rgba(var(--brand-orange-rgb), 0.08) 0%, rgba(var(--brand-orange-rgb), 0.03) 100%);
-    border-color: rgba(var(--brand-orange-rgb), 0.15);
+    border-color: rgba(var(--brand-orange-rgb), 0.25);
     border-left-color: var(--brand-orange);
     box-shadow:
         inset 4px 0 12px -4px rgba(var(--brand-orange-rgb), 0.2),

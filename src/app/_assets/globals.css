@@ -91,7 +91,7 @@ body {
 
 .info-card-cyan {
   background: linear-gradient(135deg, rgba(var(--brand-orange-rgb), 0.1) 0%, rgba(var(--brand-orange-rgb), 0.05) 100%);
-  border: 1px solid rgba(var(--brand-orange-rgb), 0.3);
+  border: 1px solid rgba(var(--brand-orange-rgb), 0.25);
 }
 
 .info-card-violet {
