@@ -1,4 +1,4 @@
-const BRAND_ORANGE_RGB: [number, number, number] = [255, 146, 43]
+const BRAND_ORANGE_RGB: [number, number, number] = [230, 126, 34]
 
 const COLORS: Record<string, [number, number, number]> = {
     brandOrange: BRAND_ORANGE_RGB,

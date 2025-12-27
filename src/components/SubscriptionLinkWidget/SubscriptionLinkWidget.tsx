@@ -22,7 +22,7 @@ export const SubscriptionLinkWidget = ({ supportUrl }: { supportUrl: string }) =
     const clipboard = useClipboard({ timeout: 10000 })
 const subscriptionQrCode = renderSVG(subscription.subscriptionUrl, {
         whiteColor: '#2f2f2f',
-        blackColor: '#ff922b'
+        blackColor: '#e67e22'
     })
 
     const [open, setOpen] = useState(false)
