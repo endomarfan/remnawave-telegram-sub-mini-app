@@ -33,16 +33,16 @@
 
 .appButtonActive,
 .appButtonActive:hover {
-    background: linear-gradient(90deg, rgba(247, 103, 7, 0.08) 0%, rgba(247, 103, 7, 0.03) 100%);
-    border-color: rgba(247, 103, 7, 0.15);
-    border-left-color: var(--mantine-color-brandOrange-5);
+    background: linear-gradient(90deg, rgba(var(--brand-orange-rgb), 0.08) 0%, rgba(var(--brand-orange-rgb), 0.03) 100%);
+    border-color: rgba(var(--brand-orange-rgb), 0.15);
+    border-left-color: var(--brand-orange);
     box-shadow:
-        inset 4px 0 12px -4px rgba(247, 103, 7, 0.2),
-        0 0 12px rgba(247, 103, 7, 0.08);
+        inset 4px 0 12px -4px rgba(var(--brand-orange-rgb), 0.2),
+        0 0 12px rgba(var(--brand-orange-rgb), 0.08);
 }
 
 .appButtonActive .appName {
-    color: var(--mantine-color-brandOrange-4);
+    color: var(--brand-orange);
 }
 
 .appButtonActive .bgIcon,

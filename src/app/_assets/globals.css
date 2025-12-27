@@ -1,3 +1,8 @@
+:root {
+  --brand-orange: rgb(247, 103, 7);
+  --brand-orange-rgb: 247, 103, 7;
+}
+
 @layer mantine, mantine-datatable;
 
 html,
@@ -43,7 +48,7 @@ body {
 
 .glass-card:hover {
   background: rgba(255, 255, 255, 0.04) !important;
-  border-color: var(--mantine-color-brandOrange-5) !important;
+  border-color: var(--brand-orange) !important;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
 }
 

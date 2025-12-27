@@ -1,14 +1,16 @@
+const BRAND_ORANGE_RGB: [number, number, number] = [247, 103, 7]
+
 const COLORS: Record<string, [number, number, number]> = {
-    brandOrange: [247, 103, 7],
-    orange: [247, 103, 7],
+    brandOrange: BRAND_ORANGE_RGB,
+    orange: BRAND_ORANGE_RGB,
     teal: [32, 201, 151],
     green: [64, 192, 87],
     lime: [130, 201, 30],
-    red: [247, 103, 7],
+    red: BRAND_ORANGE_RGB,
     amber: [250, 176, 5],
     yellow: [250, 176, 5],
     blue: [34, 139, 230],
-    cyan: [247, 103, 7],
+    cyan: BRAND_ORANGE_RGB,
     sky: [34, 139, 230],
     indigo: [99, 102, 241],
     violet: [151, 117, 250],
@@ -20,7 +22,7 @@ const COLORS: Record<string, [number, number, number]> = {
     dark: [55, 58, 64]
 }
 
-const DEFAULT_COLOR = COLORS.brandOrange
+const DEFAULT_COLOR = BRAND_ORANGE_RGB
 
 const hexToRgb = (hex: string): [number, number, number] | null => {
     const match = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)

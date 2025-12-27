@@ -24,7 +24,7 @@ export function Header() {
     }
 
     return (
-        <Box className="header-wrapper" py="md" style={{ zIndex: 1 }}>
+        <Box className="header-wrapper" py="md" style={{ zIndex: 100 }}>
             <Group justify="space-between" px={{ base: 'md', sm: 'lg', md: 'xl' }}>
                 <Group gap="xs">
                     {hasCustomLogo ? (
