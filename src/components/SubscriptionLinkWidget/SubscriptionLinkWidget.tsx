@@ -51,7 +51,7 @@ const subscriptionQrCode = renderSVG(subscription.subscriptionUrl, {
 
         const { icon: Icon, color } = matchedPlatform
             ? matchedPlatform[1]
-            : { icon: IconMessageChatbot, color: 'cyan' }
+            : { icon: IconMessageChatbot, color: 'brandOrange' }
 
         return (
             <ActionIcon

@@ -10,7 +10,7 @@ type ColorVariant = 'blue' | 'cyan' | 'green' | 'orange' | 'red' | 'teal' | 'vio
 
 const iconColorClasses: Record<ColorVariant, string> = {
     blue: classes.iconBlue,
-    cyan: classes.iconCyan,
+    cyan: classes.iconOrange,
     green: classes.iconGreen,
     teal: classes.iconTeal,
     red: classes.iconRed,
@@ -103,7 +103,7 @@ export const SubscriptionInfoCards = () => {
             />
 
             <CardItem
-                color="cyan"
+                color="orange"
                 icon={<IconArrowsUpDown size={18} />}
                 label={t(baseTranslations.bandwidth)}
                 value={bandwidthValue}

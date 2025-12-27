@@ -21,7 +21,7 @@ export const TimelineBlockRenderer = ({
                 item: classes.timelineItem,
                 itemBullet: classes.timelineItemBullet
             }}
-            color="cyan"
+            color="brandOrange"
             lineWidth={2}
             style={{ zIndex: 3 }}
         >
