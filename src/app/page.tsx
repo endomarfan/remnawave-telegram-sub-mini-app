@@ -87,13 +87,13 @@ export default function Home() {
 
     return (
         <Box style={{ position: 'relative', marginBottom: 20, padding: 0 }}>
-            {appConfig?.isSnowflakeEnabled ? (
-                <Snowfall style={{ position: 'fixed', zIndex: 2 }} speed={[0, 1]} />
-            ) : (
-                <AnimatedBackground />
-            )}
+            {appConfig?.isSnowflakeEnabled ? <Snowfall /> : <AnimatedBackground />}
             <Header />
-            <Container style={{ position: 'relative', marginBottom: 20, marginTop: 0 }} size="xl">
+            <Container
+                className="fade-in-up"
+                style={{ position: 'relative', marginBottom: 20, marginTop: 0 }}
+                size="xl"
+            >
                 <Stack style={{ zIndex: 2 }} gap="xl">
                     {SubscriptionInfoBlockRenderer && <SubscriptionInfoBlockRenderer />}
 
