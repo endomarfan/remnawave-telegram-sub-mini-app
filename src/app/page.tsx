@@ -93,7 +93,7 @@ export default function Home() {
                 <AnimatedBackground />
             )}
             <Header />
-            <Container style={{ position: 'relative', marginBottom: 20 }} size="xl">
+            <Container style={{ position: 'relative', marginBottom: 20, marginTop: 0 }} size="xl">
                 <Stack style={{ zIndex: 2 }} gap="xl">
                     {SubscriptionInfoBlockRenderer && <SubscriptionInfoBlockRenderer />}
 

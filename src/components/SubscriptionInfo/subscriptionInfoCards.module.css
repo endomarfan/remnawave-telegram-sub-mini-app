@@ -13,8 +13,8 @@
 }
 
 .iconOrange {
-    background: linear-gradient(135deg, rgba(247, 103, 7, 0.2) 0%, rgba(253, 126, 20, 0.1) 100%);
-    border: 1px solid rgba(247, 103, 7, 0.3);
+    background: linear-gradient(135deg, rgba(247, 103, 7, 0.15) 0%, rgba(247, 103, 7, 0.08) 100%);
+    border: 1px solid rgba(247, 103, 7, 0.25);
 }
 
 .iconGreen {

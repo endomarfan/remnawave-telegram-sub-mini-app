@@ -10,8 +10,8 @@ const colorGradients: Record<string, { background: string; border: string }> = {
     },
     cyan: {
         background:
-            'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
-        border: 'var(--mantine-color-brandOrange-3)'
+            'linear-gradient(135deg, rgba(247, 103, 7, 0.1) 0%, rgba(247, 103, 7, 0.05) 100%)',
+        border: 'rgba(247, 103, 7, 0.2)'
     },
     green: {
         background:
@@ -25,8 +25,8 @@ const colorGradients: Record<string, { background: string; border: string }> = {
     },
     red: {
         background:
-            'linear-gradient(135deg, rgba(250, 82, 82, 0.1) 0%, rgba(224, 49, 49, 0.05) 100%)',
-        border: 'rgba(250, 82, 82, 0.2)'
+            'linear-gradient(135deg, rgba(247, 103, 7, 0.1) 0%, rgba(247, 103, 7, 0.05) 100%)',
+        border: 'rgba(247, 103, 7, 0.2)'
     },
     yellow: {
         background:
@@ -35,13 +35,13 @@ const colorGradients: Record<string, { background: string; border: string }> = {
     },
     orange: {
         background:
-            'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
-        border: 'var(--mantine-color-brandOrange-3)'
+            'linear-gradient(135deg, rgba(247, 103, 7, 0.1) 0%, rgba(247, 103, 7, 0.05) 100%)',
+        border: 'rgba(247, 103, 7, 0.2)'
     },
     brandOrange: {
         background:
-            'linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%)',
-        border: 'var(--mantine-color-brandOrange-3)'
+            'linear-gradient(135deg, rgba(247, 103, 7, 0.1) 0%, rgba(247, 103, 7, 0.05) 100%)',
+        border: 'rgba(247, 103, 7, 0.2)'
     },
     violet: {
         background:
