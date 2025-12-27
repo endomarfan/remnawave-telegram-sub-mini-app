@@ -37,11 +37,6 @@
     border: 1px solid rgba(250, 176, 5, 0.3);
 }
 
-.iconOrange {
-    background: linear-gradient(135deg, rgba(253, 126, 20, 0.2) 0%, rgba(247, 103, 7, 0.1) 100%);
-    border: 1px solid rgba(253, 126, 20, 0.3);
-}
-
 .iconViolet {
     background: linear-gradient(135deg, rgba(151, 117, 250, 0.2) 0%, rgba(132, 94, 247, 0.1) 100%);
     border: 1px solid rgba(151, 117, 250, 0.3);

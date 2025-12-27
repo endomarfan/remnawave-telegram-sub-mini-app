@@ -65,7 +65,7 @@ body {
 
 .step-card:hover {
   background: rgba(255, 255, 255, 0.04) !important;
-  border-color: var(--mantine-color-brandOrange-5) !important;
+  border-color: var(--brand-orange) !important;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .logo-text-highlight {
-  color: var(--mantine-color-brandOrange-6);
+  color: var(--brand-orange);
 }
 
 .logo-text-normal {
@@ -90,8 +90,8 @@ body {
 }
 
 .info-card-cyan {
-  background: linear-gradient(135deg, var(--mantine-color-brandOrange-1) 0%, var(--mantine-color-brandOrange-0) 100%);
-  border: 1px solid var(--mantine-color-brandOrange-3);
+  background: linear-gradient(135deg, rgba(var(--brand-orange-rgb), 0.1) 0%, rgba(var(--brand-orange-rgb), 0.05) 100%);
+  border: 1px solid rgba(var(--brand-orange-rgb), 0.3);
 }
 
 .info-card-violet {
