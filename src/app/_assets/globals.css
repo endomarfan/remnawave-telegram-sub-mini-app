@@ -1,6 +1,6 @@
 :root {
-  --brand-orange: rgb(247, 103, 7);
-  --brand-orange-rgb: 247, 103, 7;
+  --brand-orange: rgb(255, 146, 43);
+  --brand-orange-rgb: 255, 146, 43;
 }
 
 @layer mantine, mantine-datatable;
