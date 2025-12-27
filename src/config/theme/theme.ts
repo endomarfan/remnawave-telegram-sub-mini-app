@@ -6,8 +6,8 @@ export const theme = createTheme({
     components,
 
     cursorType: 'pointer',
-
-    fontFamily: 'Montserrat, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+    fontFamily:
+        'Montserrat, Vazirmatn, Apple Color Emoji, Noto Sans SC, Twemoji Country Flags, sans-serif',
     fontFamilyMonospace: 'Fira Mono, monospace',
 
     headings: {
@@ -16,7 +16,7 @@ export const theme = createTheme({
     },
 
     breakpoints: {
-        xs: '22em',
+        xs: '25em',
         sm: '30em',
         md: '48em',
         lg: '64em',
@@ -26,8 +26,7 @@ export const theme = createTheme({
 
     scale: 1,
     fontSmoothing: true,
-    focusRing: 'auto',
-
+    focusRing: 'never',
     white: '#ffffff',
     black: '#1c1c1c',
 
@@ -71,16 +70,14 @@ export const theme = createTheme({
             '#471700'
         ]
     },
-
-    primaryColor: 'brandOrange',
-
-    primaryShade: {
-        light: 6,
-        dark: 7
-    },
-
+    primaryShade: 8,
+    primaryColor: 'cyan',
     autoContrast: true,
-    luminanceThreshold: 0.35,
+    luminanceThreshold: 0.3,
+    headings: {
+        fontFamily: 'Unbounded, Vazirmatn, Apple Color Emoji, Noto Sans SC, sans-serif',
+        fontWeight: '600'
+    },
 
     defaultRadius: 'lg'
 })
