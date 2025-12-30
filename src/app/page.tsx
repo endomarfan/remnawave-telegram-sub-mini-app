@@ -99,6 +99,7 @@ export default function Home() {
                                 BLOCK_RENDERERS[config.uiConfig.installationGuidesBlockType]
                             }
                             hasPlatformApps={hasPlatformApps}
+                            platform={osToPlatform(os)}
                         />
                     )}
                 </Stack>

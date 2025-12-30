@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { TSubscriptionPageAppConfig,
     TSubscriptionPageButtonConfig,
     TSubscriptionPagePlatformKey
@@ -8,6 +9,7 @@ import {
     ButtonVariant,
     Card,
     Group,
+    NativeSelect,
     Stack,
     Title,
     UnstyledButton
@@ -31,10 +33,11 @@ export type TBlockVariant = 'accordion' | 'cards' | 'minimal' | 'timeline'
 interface IProps {
     BlockRenderer: React.ComponentType<IBlockRendererProps>
     hasPlatformApps: Record<TSubscriptionPagePlatformKey, boolean>
+    platform: TSubscriptionPagePlatformKey | undefined
 }
 
 export const InstallationGuideConnector = (props: IProps) => {
-    const { hasPlatformApps, BlockRenderer } = props
+    const { hasPlatformApps, BlockRenderer, platform } = props
 
     const { t, currentLang, baseTranslations } = useTranslation()
 
@@ -46,14 +49,32 @@ export const InstallationGuideConnector = (props: IProps) => {
     const { tgWebAppPlatform: tgPlatform } = launchParams
     const isTDesktop = tgPlatform === 'tdesktop'
 
-    // Find first available platform and app
-    const firstAvailablePlatform = (
-        Object.keys(hasPlatformApps) as TSubscriptionPagePlatformKey[]
-    ).find((key) => hasPlatformApps[key])
-    
-    const selectedPlatform = firstAvailablePlatform!
+    const [selectedPlatform, setSelectedPlatform] = useState<TSubscriptionPagePlatformKey>(() => {
+        if (platform && hasPlatformApps[platform]) {
+            return platform
+        }
+
+        const firstAvailable = (
+            Object.keys(hasPlatformApps) as TSubscriptionPagePlatformKey[]
+        ).find((key) => hasPlatformApps[key])
+        return firstAvailable!
+    })
+
     const platformApps = platforms[selectedPlatform]!.apps
     const selectedApp = platformApps[0]
+
+    const availablePlatforms = (
+        Object.entries(hasPlatformApps) as [TSubscriptionPagePlatformKey, boolean][]
+    )
+        .filter(([_, hasApps]) => hasApps)
+        .map(([platform]) => {
+            const platformConfig = platforms[platform]!
+            return {
+                value: platform,
+                label: t(platformConfig.displayName),
+                icon: getIconFromLibrary(platformConfig.svgIconKey, svgLibrary)
+            }
+        })
 
     const subscriptionUrl = subscription.subscriptionUrl
 
@@ -148,6 +169,39 @@ export const InstallationGuideConnector = (props: IProps) => {
                     <Title c="white" fw={600} order={4}>
                         {t(baseTranslations.installationGuideHeader)}
                     </Title>
+
+                    {availablePlatforms.length > 1 && (
+                        <NativeSelect
+                            data={availablePlatforms.map((opt) => ({
+                                value: opt.value,
+                                label: opt.label
+                            }))}
+                            leftSection={
+                                <span
+                                    dangerouslySetInnerHTML={{
+                                        __html: availablePlatforms.find(
+                                            (opt) => opt.value === selectedPlatform
+                                        )!.icon
+                                    }}
+                                    style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        width: 20,
+                                        height: 20
+                                    }}
+                                />
+                            }
+                            onChange={(event) => {
+                                const value = event.target
+                                    .value as unknown as TSubscriptionPagePlatformKey
+                                setSelectedPlatform(value)
+                            }}
+                            radius="md"
+                            size="sm"
+                            value={selectedPlatform}
+                            w={150}
+                        />
+                    )}
                 </Group>
 
                 {selectedApp && (
