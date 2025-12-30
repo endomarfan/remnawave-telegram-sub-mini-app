@@ -22,7 +22,7 @@ const COLORS: Record<string, [number, number, number]> = {
     dark: [55, 58, 64]
 }
 
-const DEFAULT_COLOR: [number, number, number] = [34, 139, 230] // blue instead of orange
+const DEFAULT_COLOR: [number, number, number] = [32, 201, 151] // teal instead of orange
 
 const hexToRgb = (hex: string): [number, number, number] | null => {
     const match = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)

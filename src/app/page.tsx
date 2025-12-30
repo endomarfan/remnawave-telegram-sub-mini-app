@@ -89,11 +89,7 @@ export default function Home() {
         <Box style={{ position: 'relative', marginBottom: 20, padding: 0 }}>
             {appConfig?.isSnowflakeEnabled ? <Snowfall /> : <AnimatedBackground />}
             <Header />
-            <Container
-                className="fade-in-up"
-                style={{ position: 'relative', marginBottom: 20, marginTop: 0 }}
-                size="xl"
-            >
+            <Container style={{ position: 'relative', marginBottom: 20, marginTop: 0 }} size="xl">
                 <Stack style={{ zIndex: 2 }} gap="xl">
                     {SubscriptionInfoBlockRenderer && <SubscriptionInfoBlockRenderer />}
 
@@ -103,7 +99,6 @@ export default function Home() {
                                 BLOCK_RENDERERS[config.uiConfig.installationGuidesBlockType]
                             }
                             hasPlatformApps={hasPlatformApps}
-                            platform={osToPlatform(os)}
                         />
                     )}
                 </Stack>

@@ -19,7 +19,7 @@
     border-left: 3px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--mantine-radius-md);
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s ease;
 }
 
 .appButton::before {
@@ -40,7 +40,6 @@
 .appButton:hover {
     background: rgba(255, 255, 255, 0.05);
     border-left-color: rgba(255, 255, 255, 0.25);
-    transform: translateX(4px);
 }
 
 .appButton:hover .bgIcon {
@@ -55,7 +54,6 @@
     box-shadow:
         inset 4px 0 12px -4px rgba(var(--brand-orange-rgb), 0.2),
         0 0 12px rgba(var(--brand-orange-rgb), 0.08);
-    transform: translateX(6px);
 }
 
 .appButtonActive .appName {
