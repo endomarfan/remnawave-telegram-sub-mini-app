@@ -63,8 +63,11 @@ export const InfoBlock = (props: IInfoBlockProps) => {
                 border: `1px solid ${gradient.border}`,
                 borderRadius: 'var(--mantine-radius-md)',
                 backdropFilter: 'blur(10px)',
-                transition: 'all 0.2s ease'
+                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                transform: 'translateZ(0)',
+                willChange: 'transform'
             }}
+            className="info-block-hover"
         >
             <Stack gap={4}>
                 <Group gap={4} wrap="nowrap">
